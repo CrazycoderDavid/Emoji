@@ -30,11 +30,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row
-        )
         let cell = UITableViewCell()
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let emoji = emojis[indexPath.row]
+       performSegue(withIdentifier: "trailToLarge", sender: emoji)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tempVC = segue.destination as! LargePhotoViewController
+        tempVC.emoji = sender as! String
     }
     
 }
