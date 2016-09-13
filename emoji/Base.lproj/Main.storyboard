@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emoji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pvs-f0-Kep">
+                                <frame key="frameInset" minY="12" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pvs-f0-Kep" secondAttribute="trailing" id="Gm6-oc-2LU"/>
+                            <constraint firstItem="pvs-f0-Kep" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WCT-uJ-znw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pvs-f0-Kep" secondAttribute="bottom" id="hOg-Ai-tAS"/>
+                            <constraint firstItem="pvs-f0-Kep" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zuG-kI-tYJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewYo" destination="pvs-f0-Kep" id="uji-Lx-mZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s9r-Ai-uB9">
+            <objects>
+                <viewController id="kCj-bz-tRl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HbC-8U-hmZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Sj-1n-jmp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CHC-k3-HYP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⛪️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq4-ie-4rQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We go here to pray" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-5Z-OiW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lEk-5Z-OiW" firstAttribute="leading" secondItem="CHC-k3-HYP" secondAttribute="leadingMargin" constant="99" id="Ds7-0s-1su"/>
+                            <constraint firstItem="lEk-5Z-OiW" firstAttribute="top" secondItem="oq4-ie-4rQ" secondAttribute="bottom" constant="113" id="JnZ-ME-7i8"/>
+                            <constraint firstItem="1Sj-1n-jmp" firstAttribute="top" secondItem="lEk-5Z-OiW" secondAttribute="bottom" constant="281" id="LxU-gb-jKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lEk-5Z-OiW" secondAttribute="trailing" constant="99" id="W0y-E7-9C8"/>
+                            <constraint firstItem="oq4-ie-4rQ" firstAttribute="leading" secondItem="CHC-k3-HYP" secondAttribute="leadingMargin" constant="14" id="ax1-Bn-czv"/>
+                            <constraint firstItem="oq4-ie-4rQ" firstAttribute="top" secondItem="HbC-8U-hmZ" secondAttribute="bottom" constant="17" id="buj-Qc-fZC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oq4-ie-4rQ" secondAttribute="trailing" constant="19" id="ejn-IV-ODc"/>
+                            <constraint firstItem="1Sj-1n-jmp" firstAttribute="top" secondItem="oq4-ie-4rQ" secondAttribute="bottom" constant="421" id="pjo-IN-JW3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACi-Ad-4GM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
